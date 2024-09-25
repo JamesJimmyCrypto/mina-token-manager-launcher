@@ -25,7 +25,7 @@ This application is for testing and development purposes only. It is not secure 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/mina-token-manager.git
+   git clone https://github.com/izzetemredemir/mina-token-manager.git
    cd mina-token-manager
    ```
 
@@ -65,7 +65,7 @@ The application supports both Devnet and Mainnet. Users can switch between netwo
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request to our [GitHub repository](https://github.com/izzetemredemir/mina-token-manager).
 
 ## License
 
@@ -83,3 +83,7 @@ To learn more about the technologies used in this project, check out the followi
 - [Mina Protocol Documentation](https://docs.minaprotocol.com/)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+## Live Demo
+
+You can try out the Mina Token Manager at [https://minatokenmanager.com/](https://minatokenmanager.com/)

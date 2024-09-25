@@ -1,5 +1,3 @@
-// @ts-ignore
-
 import {
   AccountUpdate,
   AccountUpdateForest,

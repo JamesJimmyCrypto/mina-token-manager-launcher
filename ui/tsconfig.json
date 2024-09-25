@@ -4,7 +4,6 @@
     "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "strict": true,
-    "strictPropertyInitialization": false, // to enable generic constructors, e.g. on CircuitValue
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,

@@ -1,5 +1,3 @@
-// @ts-ignore
-
 import {
   AccountUpdate,
   assert,
@@ -52,25 +50,25 @@ export class FungibleTokenAdmin extends SmartContract implements FungibleTokenAd
     return AccountUpdate.createSigned(admin)
   }
 
-  //@method.returns(Bool)
+  @method.returns(Bool)
   public async canMint(_accountUpdate: AccountUpdate) {
     await this.ensureAdminSignature()
     return Bool(true)
   }
 
-  //@method.returns(Bool)
+  @method.returns(Bool)
   public async canChangeAdmin(_admin: PublicKey) {
     await this.ensureAdminSignature()
     return Bool(true)
   }
 
-  //@method.returns(Bool)
+  @method.returns(Bool)
   public async canPause(): Promise<Bool> {
     await this.ensureAdminSignature()
     return Bool(true)
   }
 
-  //@method.returns(Bool)
+  @method.returns(Bool)
   public async canResume(): Promise<Bool> {
     await this.ensureAdminSignature()
     return Bool(true)

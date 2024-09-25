@@ -1,3 +1,5 @@
+declare const window: any;
+
 import React, { useState, useEffect } from 'react';
 import ContractWorkerClient from '../pages/contractWorkerClient';
 import { PublicKey } from 'o1js';
@@ -11,9 +13,10 @@ interface MintFormProps {
   adminPrivateKey: string | null;
   setAdminPrivateKey: (value: string | null) => void;
   connectWallet: () => Promise<void>;
+  network: any; 
 }
 
-export default function MintForm({ contractWorkerClient, isContractReady, tokenAddress, adminPrivateKey, setAdminPrivateKey, connectWallet }: MintFormProps) {
+export default function MintForm({ contractWorkerClient, isContractReady, tokenAddress, adminPrivateKey, setAdminPrivateKey, connectWallet,network }: MintFormProps) {
   const [amount, setAmount] = useState('99');
   const [recipientPublicKey, setRecipientPublicKey] = useState('');
   const [loading, setLoading] = useState(false);
