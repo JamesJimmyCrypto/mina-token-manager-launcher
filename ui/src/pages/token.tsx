@@ -32,9 +32,10 @@ interface TokenDetails {
 export default function TokenPage() {
   const [network, setNetwork] = useState<string>(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('network') || 'devnet';
+      const storedNetwork = localStorage.getItem('network');
+      return storedNetwork ? storedNetwork.charAt(0).toUpperCase() + storedNetwork.slice(1).toLowerCase() : 'Devnet';
     }
-    return 'devnet';
+    return 'Devnet';
   });
 
   const [token, setToken] = useState<TokenDetails | null>(null);

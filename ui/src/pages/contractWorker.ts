@@ -58,17 +58,19 @@ const functions = {
     } else if (typeof networkObj === "string") {
       network = networkObj;
     } else {
-      throw new Error("Invalid network parameter");
+      network = "Devnet";
     }
 
     console.log("setActiveInstance is running", network);
     let graphqlUrl;
-    if (network === "Devnet") {
+    if (network.toLowerCase() === "devnet") {
       graphqlUrl = "https://proxy.devnet.minaexplorer.com/graphql";
-    } else if (network === "Mainnet") {
+    } else if (network.toLowerCase() === "mainnet") {
       graphqlUrl = "https://api.minascan.io/archive/mainnet/v1/graphql";
     } else {
-      throw new Error("Invalid network");
+      console.warn(`Invalid network "${network}", defaulting to Devnet`);
+      network = "Devnet";
+      graphqlUrl = "https://proxy.devnet.minaexplorer.com/graphql";
     }
 
     const Network = Mina.Network(graphqlUrl);
