@@ -11,6 +11,16 @@ Mina Token Manager is a web application built with Next.js and TypeScript that a
 - Manage multiple tokens
 - Support for both Devnet and Mainnet
 
+  
+
+## Live Demo
+
+You can try out the Mina Token Manager at [https://minatokenmanager.com/](https://minatokenmanager.com/)
+
+![6024073850825851820](https://github.com/user-attachments/assets/63691bef-979c-40fd-b46f-10c3bc5f3b74)
+
+
+
 ## Warning
 
 This application is for testing and development purposes only. It is not secure for use with real funds. We recommend using the official [Mina Fungible Token repository](https://github.com/MinaFoundation/mina-fungible-token/tree/main) for production use.
@@ -83,7 +93,3 @@ To learn more about the technologies used in this project, check out the followi
 - [Mina Protocol Documentation](https://docs.minaprotocol.com/)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-
-## Live Demo
-
-You can try out the Mina Token Manager at [https://minatokenmanager.com/](https://minatokenmanager.com/)
